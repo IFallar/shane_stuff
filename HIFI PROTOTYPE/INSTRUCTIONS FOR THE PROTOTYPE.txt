@@ -1,0 +1,24 @@
+HELLO!
+
+This semi functional Mock-Up prototype was made by Shane Fallar; 
+
+This is intended to serve as the HiFi Prototype of Group A. 
+
+As of now, this mock up provides a basic and rudimentary rundwon of 
+what the project will look like in the future.
+
+	Working Features:
+	
+		- This prototype comes with a sample article; press the read more on the
+		  "Gallic Wars" to see it. (October 3)
+		
+		- The interactive map also has some basic functionality, click some of its
+		  parts to preview the placeholder pop-up. (October 3)
+		
+		- Hover effects and styling has been added. (October 3)
+
+		-Sign and Sign in window now availabe (October 4)
+
+I must reitirate that this is only the first version, a proto-prototype, and thus some things will 
+be subject to change, but overall, the look of the website in the future should remain consistent with 
+what you see here.
