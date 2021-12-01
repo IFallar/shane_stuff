@@ -263,7 +263,6 @@ a{
 }
 
 	#cat_main{
-		height: 3240px;
 		width: 100%;
 		background-color: black;
 	}
@@ -274,6 +273,7 @@ a{
 			background-color:black;
 			position: fixed;
 			color: white;
+			overflow: hidden;
 			}
 
 			#cat_main_aside a{
@@ -345,7 +345,7 @@ a{
 				}
 
 		#cat_main_center_1{
-			height: 3240px;
+			margin-top: 100px;
 			width: 75%;
 			float: right;
 			background-color: #19171d;
