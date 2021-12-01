@@ -238,7 +238,18 @@ body{
 				font-family: helvetica;
 				display: block;
 			}
-			
+	
+#content{
+	margin-top: 20px;
+	width: 100%;
+}
+
+	#td_main{
+		height: 300px;
+		width: 100%;
+		background-color: #19171d;
+	}
+
 #bottom{
 	height: 300px;
 	width: 100%;
