@@ -506,6 +506,7 @@ a{
 
 					.cat_box:hover{
 						filter: drop-shadow(0 0 0.8rem black);;
+						cursor: pointer;
 					}
 
 					.cat_box img{
