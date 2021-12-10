@@ -1,0 +1,415 @@
+*{
+	margin: 0px;
+}
+
+body{
+	background-color: black;
+}
+
+.tbar{
+	background-color: black;
+	padding-top: 10px;
+	width: 100%;
+	height: 70px;
+		}
+
+
+		.menu:visited { text-decoration: none; color:white; }
+
+
+		.tbar header{
+			float: left;
+			width: 20%;
+			height: 70px;
+			margin-top: 0px;
+			margin-left: 5%;
+			text-align: left;
+			font-family: helvetica;
+			color: white;
+			font-weight: bold;
+			font-size: 60px;
+			background-color: black;
+		}
+
+		#home{
+			color: steelblue;
+		}
+
+		#im{
+			color: white;
+		}
+
+		#im:hover{
+			color: steelblue;
+		}
+
+
+
+		.tbar ul{
+			float: left;
+			margin-left: 1%;
+			margin-top: 0px;
+			color: white;
+			font-weight: bold;
+			width: 57%;
+			height: 70px;
+			list-style-type: none;
+			margin: 1%;
+			padding: 0;
+		}
+
+
+
+		.menu{
+			float: left;
+			margin-left: .5%%;
+			font-family: helvetica;
+			font-size: 14px;
+			margin-top: 20px;
+			padding: 5px;
+			text-decoration: none;
+			background-color: black;
+		}
+
+		.menu:hover{
+			color: steelblue;
+		}
+
+		#searchbar{
+			float: left;
+			background-color: black;
+			font-size: 15px;
+			color: white;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-left: 2%;
+			padding-left: 5px;
+			height: 25px;
+			width: 17%;
+			border: none;
+			border-color: steelblue;
+			border-bottom: steelblue solid;
+		}
+
+		#membership{
+			float: right;
+			margin-right: 5%;
+			margin-top: 32px;
+			width: 100px;
+			height: 25px;
+			border: white solid;
+			background-color: black;
+		}
+
+			#membutton{
+				padding-top: 4px;
+				height: 21px;
+				background-color: black;
+				font-size: 15px;
+				font-family: helvetica;
+				font-weight: bold;
+				text-align: center;
+				color: white;
+			}
+
+			#membutton:hover{
+				background-color:steelblue;
+				cursor: pointer;
+			}
+			
+#join{
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 650px;
+	background-color: rgba(0, 0, 0, .3);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	}
+
+	#login{
+		width: 50%;
+		height: 70%;
+		background-color: white;
+		position: relative;
+	}
+
+		#cb0{
+			color: black;
+			position: absolute;
+			top: 0;
+			right: 1%;
+			font-size: 30px;
+			transform: rotate(45deg);
+			cursor: pointer;	
+		}
+
+		#selectorf{
+			position: absolute;
+			height: 15%;
+			width: 100%;
+			background-color: whitesmoke;
+		}
+
+
+			.topbutton{
+				padding-top: 3%;
+				padding-bottom: 3.8%;
+				float: left;
+				font-size: 20px;
+				font-family: helvetica;
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+			}
+
+			#have{
+				color: white;
+				background-color: steelblue;
+			}
+
+			#donthave{
+				color: black;
+				background-color: whitesmoke;
+			}
+
+
+			.topbutton:hover{
+				cursor: pointer;
+			}
+
+		.inputs1{
+			position: absolute;
+			top: 15%;
+			padding-top: 5%;
+			height: 75%;
+			width: 100%;
+			background-color: white;
+			display: block;
+		}
+
+		#signin_input{
+			display: block;
+		}
+
+		#signup_input{
+			display: none;
+		}
+
+
+
+			.logput{
+				padding: 10px;
+				margin-top: 2%;
+				margin-left: 15%;
+				width: 70%;
+				height: 7%;
+				border-style: none;
+				border-radius: 5px;
+				background-color: lightgrey;
+				display: block;
+			}
+
+			.regput{
+				padding: 10px;
+				margin-top: 1%;
+				margin-left: 15%;
+				width: 70%;
+				height: 5%;
+				border-style: none;
+				border-radius: 5px;
+				background-color: lightgrey;
+				display: block;
+			}
+
+			#signin{
+				float: right;
+				margin-top: 2%;
+				margin-right: 12%;
+				text-align: center;
+				padding: 10px;
+				font-size: 12px;
+				width: 15%;
+				background-color: steelblue;
+				border-color: slateblue;
+				border-radius: 5px;
+				text-decoration: none;
+				font-family: helvetica;
+				display: block;
+			}
+			
+.articlebody{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	background-color: black;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	}
+
+	.articletitle{
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-left: 2%;
+		background-color: #19171d;
+		width: 68%;
+	}
+
+		.headtitle{
+			width: 98%;
+			float: left;
+			color: white;
+			padding-left: 2%;
+			margin-top: 1%;
+			font-weight: bold;
+			font-size: 50px;
+			border-bottom: 2px white solid;
+		}
+
+		.author{
+			float: left;
+			color: white;
+			margin-left: 2%;
+			margin-top: 1%;
+			font-size: 20px;
+			font-style: italic;
+		}
+
+		.date{
+			float: right;
+			color: white;
+			margin-right: 2%;
+			margin-top: 1%;
+			font-size: 20px;
+			font-style: italic;
+		}
+
+	.sidebar{
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-left: 2%;
+		background-color: black;
+		width: 25%;
+	}
+
+	.articleimg{
+		background-color: #19171d;
+		float: left;
+		width: 68%;
+		padding-bottom: 20px;
+		padding-top: 70px;
+		margin-left: 2%;
+	}
+
+		.articlemainimg{
+			object-fit: cover;
+			width: 100%;
+			height: 500px;
+		}
+
+	.mainparagraph{
+		background-color: #19171d;
+		float: left;
+		width: 68%;
+		padding-bottom: 20px;
+		margin-left: 2%;
+	}
+
+		.mainparagraph p{
+			color: white;
+			width: 90%;
+			margin-left: 4%;
+			font-size: 15px;
+			font-family: Verdana;
+			padding-bottom: 50px;
+		}
+
+		.articlefooting{
+			border-top: 1px white solid;
+			border-bottom: 1px white solid;
+			width: 90%;
+			margin-left: 4%;
+			padding-bottom: 100px;
+			padding-top: 20px;
+		}
+
+#bottom{
+	height: 300px;
+	width: 100%;
+	background-color: black;
+	}
+
+	#topfooter{
+		float: left;
+		width: 100%;
+		height: 49%;
+		background-color: black;
+		}
+
+		#centertop{
+			width: 80%;
+			height: 99%;
+			background-color: black;
+			border-bottom: white solid;
+			margin-left: 10%;
+		}
+
+		#centertop img{
+			float: left;
+			height: 90px;
+			width: 90px;
+			object-fit: cover;
+			margin-top: 30px;
+			margin-left: 25%;
+		}
+
+		#centertop header{
+			float: left;
+			color: white;
+			font-size: 35px;
+			margin-top: 55px;
+			margin-left: 2%;
+			font-weight: bold;
+			font-family: Helvetica;
+		}
+
+	#botfooter{
+		float: left;
+		width: 100%;
+		height: 50%;
+		background-color: black;
+	}
+
+
+		#centerbot1{
+			width: 30%;
+			height: 40%;
+			background-color: black;
+			margin-top: 2%;
+			margin-left: 35%;
+		}
+
+		#centerbot1 a{
+			text-decoration: none;
+		}
+
+		#firstico{
+			margin-left: 20%;
+		}
+
+		.scico{
+			text-decoration: none;
+			width: 50px;
+			height: 50px;
+		 	margin-left: 10%;
+		 	opacity: .8;
+		}
+
+		.scico:hover{
+			opacity: 1;
+			filter: drop-shadow(0 0 0.5rem black);;
+		}
+

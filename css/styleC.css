@@ -1,0 +1,939 @@
+*{
+	margin: 0px;
+}
+
+body{
+	background-color: #19171d;
+}
+
+a{
+	text-decoration: none;
+}
+
+@font-face {
+		src: url(Fonts/Roobert/Roobert-Regular.otf);
+		font-family: RoobertReg;
+  	}
+
+@font-face {
+		src: url(Fonts/Roobert/Roobert-Light.otf);
+		font-family: RoobertLight;
+  	}
+
+#header_bar{
+ 	width: 100%;
+ 	height: 70px;
+ 	background-color: black;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+ 	position: fixed;
+ 	z-index: 1;
+ 	}
+
+ 	#site_name{
+ 		float: left;
+ 		margin-left: 5%;
+ 		height: 100%;
+ 		width: 25%;
+ 	}
+
+	 	#site_name_h1{
+	 		padding-top: 8px;
+	 		color: white;
+	 		font-weight: bolder;
+	 		font-family: helvetica;
+	 		font-size: 50px;
+
+	 	}
+
+	#site_nav{
+		float: right;
+		margin-right: 5%;
+
+		width: 50%;
+		height: 100%;
+		background-color: black;
+
+		display: flex;
+		align-items: center;
+	}
+
+		.top_nav_buttons{
+			width: 40px;
+			height: 34px;
+			background-color: black;
+			margin-left: 2%;
+
+			border: darkgray; 1px solid;
+		}
+
+		.top_nav_buttons:hover{
+			cursor: pointer;
+			opacity: .8;
+		}
+
+			#forum_search img{
+				padding: 10%;
+				height: 80%;
+				width: 80%;
+				object-fit: scale-down;
+			}
+
+			#message_nav img{
+				padding-top: 10%;
+				padding-left: 14%;
+				height: 80%;
+				width: 70%;
+				object-fit: scale-down;
+				filter: invert(1);
+			}
+
+			#notif_nav img{
+				padding: 20%;
+				height: 60%;
+				width: 60%;
+				object-fit: scale-down;
+			}
+
+			#login_nav img{
+				float: left;
+				padding-top: 3%;
+				padding-left: 1%;
+				height: 80%;
+				width: 40%;
+
+				object-fit: scale-down;
+				filter: invert(1);
+			}
+
+			#login_nav p{
+				padding-top: 7px;
+				font-family: Helvetica;
+				font-weight: bold;
+				font-size: 15px;
+
+				float: left;
+				color: white;
+			}
+
+			#login_nav{
+				width: 90px;
+			}
+
+		#main_searchbar{
+			width: 60%;
+			height: 36px;
+			background-color: whitesmoke;
+
+			margin-left: 2%;
+			border-radius: 5px;
+
+			border: none;
+
+			font-size: 15px;
+			font-weight: lighter;
+		}
+
+			#main_searchbar img{
+				float: left;
+				margin-top: 3px;
+				margin-left: 5px;
+				width: 7%;
+				height: 30px;
+				object-fit: cover;
+			}
+
+			#main_searchbar_actual{
+				float: left;
+				width: 87%;
+				height: 34px;
+				background-color: whitesmoke;
+
+				margin-left: 2%;
+				border-radius: 5px;
+
+				border: none;
+				outline: none;
+
+				font-size: 15px;
+				font-weight: lighter;			
+				}
+
+	.pop_up{
+		position: absolute;
+		right: 50px;
+		top: 60px;
+		width: 20%;
+		background-color: #19171d;
+
+		border-radius: 10px;
+
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+		display: none;
+		}
+
+		.pop_up h2{
+
+			width: 97%;
+
+			color: white;
+			padding-top: 3%;
+			padding-bottom: 3%;
+			padding-left: 3%;
+			font-family: Helvetica;
+			font-weight: lighter;
+			font-size: 15px;
+
+			float: left;
+
+			border-bottom: solid steelblue 1px;			
+		}
+
+		.pop_up p{
+
+			width: 97%;
+
+			color: white;
+			padding-top: 3%;
+			padding-bottom: 10%;
+			padding-left: 3%;
+			font-family: Helvetica;
+			font-weight: lighter;
+			font-size: 13px;
+
+			float: left;
+
+			border-bottom: solid steelblue 1px;			
+		}
+
+		.pop_up_btm{
+			width: 97%;
+
+			color: white;
+			padding-top: 3%;
+			padding-bottom: 3%;
+			padding-left: 3%;
+			font-family: Helvetica;
+			font-weight: lighter;
+
+			float: left;
+				
+		}
+
+		.pop_up_btm a{
+			float: left;
+			padding-top: 1%;
+			padding-bottom: 1%;
+			padding-left: 1%;
+			padding-right: 5%;
+
+			font-size: 12px;
+			color: steelblue;			
+		}
+
+#join{
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 650px;
+	background-color: rgba(0, 0, 0, .3);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	}
+
+	#login{
+		width: 50%;
+		height: 70%;
+		position: relative;
+	}
+
+		#cb0{
+			color: black;
+			position: absolute;
+			top: 0;
+			right: 1%;
+			font-size: 30px;
+			transform: rotate(45deg);
+			cursor: pointer;	
+		}
+
+		#selectorf{
+			position: absolute;
+			height: 15%;
+			width: 100%;
+			background-color: whitesmoke;
+		}
+
+
+			.topbutton{
+				padding-top: 3%;
+				padding-bottom: 3.8%;
+				float: left;
+				font-size: 20px;
+				font-family: helvetica;
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+			}
+
+			#have{
+				color: white;
+				background-color: steelblue;
+			}
+
+			#donthave{
+				color: black;
+				background-color: whitesmoke;
+			}
+
+
+			.topbutton:hover{
+				cursor: pointer;
+			}
+
+		.inputs1{
+			position: absolute;
+			top: 15%;
+			padding-top: 5%;
+			height: 75%;
+			width: 100%;
+			background-color: #19171d;
+			display: block;
+		}
+
+		#signin_input{
+			display: block;
+		}
+
+		#signup_input{
+			display: none;
+		}
+
+
+
+			.logput{
+				padding: 10px;
+				margin-top: 2%;
+				margin-left: 15%;
+				width: 70%;
+				height: 7%;
+				border-style: none;
+				border-radius: 5px;
+				background-color: lightgrey;
+				display: block;
+			}
+
+			.regput{
+				padding: 10px;
+				margin-top: 1%;
+				margin-left: 15%;
+				width: 70%;
+				height: 5%;
+				border-style: none;
+				border-radius: 5px;
+				background-color: lightgrey;
+				display: block;
+			}
+
+			#signin{
+				float: right;
+				margin-top: 2%;
+				margin-right: 12%;
+				text-align: center;
+				padding: 10px;
+				font-size: 12px;
+				width: 15%;
+				background-color: steelblue;
+				border-color: slateblue;
+				border-radius: 5px;
+				text-decoration: none;
+				font-family: helvetica;
+				display: block;
+				color: white;
+			}
+
+#lower_nav{
+	border-top: 75px solid black;
+	padding-top: 10px;
+	width: 100%;
+	height: 40px;
+	background-color: #19171d;
+	}
+
+	#lower_nav_container{
+		width: 90%;
+		height: 40px;
+
+		margin-left: 5%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		#current_page{
+			color: white;
+			background-color: steelblue;
+		}
+
+		.lower_nav_buttons{
+			font-family: Roobertlight;
+			font-weight: lighter;
+			font-size: 15px;
+			color: darkgray;
+			padding: 7px;
+
+			background-color: #19171d;
+			margin-right: 1%;
+		}
+
+		.lower_nav_buttons:hover{
+			background-color: rgba(255, 255, 255, .1);
+			color: white;
+			cursor: pointer;
+		}
+
+
+#content{
+	width: 100%;
+	justify-content: center;
+	background-color: #19171d;
+}
+
+	#td_main{
+		overflow: hidden;
+		height: 120px;
+		width: 80%;
+		background-color: #19171d;
+		margin-left: 10%;
+		border-bottom: solid 1px black;
+		padding-bottom: 30px;
+		}
+
+		#this{
+			color: white;
+			font-size: 35px;
+			font-weight: bolder;
+			font-family: helvetica;
+
+			margin-top: 7%;
+			float: left;
+			padding-left: 10px;
+		}
+
+		#date{
+			color: steelblue;
+			font-size: 35px;
+			font-weight: bolder;
+			font-family: helvetica;
+
+			margin-top: 7%;
+			float: left;
+			padding-left: 10px;		
+		}
+
+		#date_picker{
+			margin-top: 7%;
+			margin-left: .5%;
+			background-color: transparent;
+			border: none;
+			width: 50px;
+			height: 40px;
+			float: left;
+		}
+
+			#date_picker img{
+				width: 30px;
+				height: 30px;
+				object-fit: cover;
+				transform: rotate(0deg);
+
+			}
+
+			#date_picker img:hover{
+				cursor: pointer;
+				filter: drop-shadow(0 0 0.2rem black);;
+			}
+
+		#date_holder{
+			float: left;
+			background-color: #19171d;			
+			margin-top: 7%;
+			width: 100%;
+			height: 120px;
+		}
+
+			.cent{
+				width: 60%;
+				height: 100%;
+				float: left;
+			}
+
+				#date_title{
+					margin-top: 1%;
+					text-align: center;
+					color: white;
+					font-size: 20px;
+					font-weight: lighter;
+					font-family: RoobertLight;					
+				}
+
+				#month{
+					margin-left: 9%;
+					margin-right: 2%;
+					margin-top: 2%;
+					width: 40%;
+					height: 30px;
+					font-family: Roobert;
+					font-weight: bolder;
+					font-size: 20px;
+				}
+
+				#day{
+					margin-right: 2%;
+					margin-top: 2%;
+					width: 40%;
+					height: 30px;
+					font-family: Roobert;
+					font-weight: bolder;
+					font-size: 20px;
+				}
+
+					.drop option{
+						margin-left: 5%;
+					}
+
+				#go{
+					margin-top: 1%;
+					margin-left: 9%;
+					width: 82.5%;
+					height: 30px;
+					background-color: steelblue;	
+					border: none;	
+					font-weight: bolder;
+					color: white;			
+				}
+
+				#go:hover{
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+					cursor: pointer;
+				}
+
+			.arr{
+				width: 20%;
+				height: 100%;
+				float: left;
+			}
+
+	#td_under{
+		padding-top: 3%;
+		width: 80%;
+		background-color: #19171d;
+		margin-left: 10%;
+		border-bottom: solid 1px black;
+		}
+
+		#featuredevent{
+			float: left;
+			width: 50%;
+			height: 550px;
+			background-color: #19171d;
+			border-right: solid 1px black;
+		}
+
+			#fboxevent{
+				margin-top: 5%;
+				width: 97%;
+				height: 85%;
+				background-color: black;
+				position: relative;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+			}
+
+			.fbox h1{
+				color: white;
+				font-size: 35px;
+				font-weight: bolder;
+				font-family: helvetica;
+
+			}
+
+			#fboxeventpic{
+				height: 65%;
+				width: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+			}
+
+			#text{
+				width: 98%;
+				height: 35%;
+				padding-left: 2%;
+				position: absolute;
+				bottom: 0px;
+				color: white;
+			}
+
+				#ftitle{
+					margin-top: 2%;
+					font-size: 25px;
+					text-decoration: underline;
+
+				}
+
+				#ftdesc{
+					margin-top: 2%;
+					font-size: 12;
+					font-family: Roobertlight;
+					width: 98%;
+				}
+
+			#year{
+				position: absolute;
+				padding: 1%;
+				background-color: darkred;
+				margin: 2%;
+
+				font-family: helvetica;
+				font-weight: bold;
+				font-size: 15px;
+				letter-spacing: 1px;
+				color: white;
+				border-radius: 5px;
+			}
+
+		#featuredbio{
+			float: left;
+			padding-left: 1.9%;
+			width: 48%;
+			height: 550px;
+			background-color: #19171d;
+			
+		}
+
+			#fboxbio{
+				float: left;
+				margin-top: 5%;
+				width: 50%;
+				height: 85%;
+				background-color: black;
+				position: relative;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+			}
+
+
+				#bioname{
+					width: 100%;
+					height: 15%;
+					color: white;
+				}
+
+					#bioname h3{
+						font-weight: bolder;
+						font-size: 30px;
+						color: steelblue;
+						margin: 5% 0 1% 5%;
+					}
+
+					#bioname p{
+						font-family: Roobert;
+						font-weight: bold;
+						font-size: 15px;
+						color: white;
+						margin-left: 5%;
+					}
+
+				#biopic{
+					width: 100%;
+					height: 35%;
+					object-fit: cover;
+				}
+
+				#biodeets{
+					width: 100%;
+					height: 45%;
+				}
+
+				#biodeets{
+					margin-left: 5%;
+				}
+
+					.bd_date{
+						font-size: 13px;
+						font-family: helvetica;
+						color: white;
+						padding-top: 5%;
+						letter-spacing: 1px;
+						text-decoration: underline;
+					}
+
+					.date_actual{
+						font-size: 17px;
+						font-family: Roobertlight;
+						color: white;
+						padding-top: 1%;
+						letter-spacing: 1px;
+					}
+
+					.location{
+						font-size: 16px;
+						font-family: Roobert;
+						color: steelblue;
+						padding-top: 1%;
+						letter-spacing: 1px;
+					}
+
+
+			#fboxbioside{
+				float: left;
+				margin-top: 5%;
+				margin-left: 2%;
+				width: 45%;
+				height: 85%;
+				position: relative;
+			}
+
+				#borntoday{
+					width: 90%;
+					height: 5%;
+					margin-top: 5%;
+					margin-left: 5%;
+					padding-bottom: 5%;
+				}
+
+				#borntoday h2{
+					font-size: 20px;
+					font-family: Roobert;
+					font-weight: bold;
+					float: left;
+					padding-right: 2%;
+				}
+
+					#born{
+						color: white;
+					}
+
+					#borntodaydate{
+						color: steelblue;
+					}
+
+				.borntodaypeople{
+					margin-top: 5%;
+					width: 90%;
+					height: 15%;
+					margin-top: 5%;
+					margin-left: 5%;
+				}
+
+
+					.born_year{
+						padding: 1%;
+						width: 25%;
+						background-color: darkred;
+						text-align: center;
+
+						font-family: helvetica;
+						font-weight: bold;
+						font-size: 15px;
+						letter-spacing: 1px;
+						color: white;
+						border-radius: 5px;
+					}
+
+					.born_name{
+						font-size: 17px;
+						font-family: Roobertlight;
+						color: white;
+						padding-top: 1%;
+						letter-spacing: 1px;
+					}
+
+					.born_who{
+						font-size: 14px;
+						font-family: Roobert;
+						color: steelblue;
+						padding-top: 1%;
+						letter-spacing: 1px;
+					}				
+
+	#td_more{
+		position: relative;
+		margin-top: 590px;
+		width: 80%;
+		margin-left: 10%;
+		border-top: solid 1px black;
+		padding-bottom: 100px;
+		}
+
+		.event_box{
+			width: 70%;
+			height: 150px;
+			background-color: black;
+			margin-top: 3%;
+			position: relative;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+		}
+
+		.eve_box_img{
+			width: 30%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.event_box_text{
+			padding-right: 3%;
+			width: 65%;
+			height: 100%;
+			float: right;
+		}
+
+		#td_more h3{
+				margin-top: 2%;
+				color: white;
+				font-size: 35px;
+				font-weight: bolder;
+				font-family: helvetica;
+		}
+
+		#event_box_title{
+			margin-top: 3%;
+			font-family: helvetica;
+			color: steelblue;
+		}
+
+		#event_box_desc{
+			margin-top: 2%;
+			font-family: Roobertlight;
+			color: white;
+		}
+
+
+#ni_footer{
+	width: 100%;
+	padding-bottom: 50px;
+	}
+
+	#ni_footer_container{
+		border-top: solid black 1px;
+		border-bottom: solid black 1px;
+
+		height: 270px;
+		width: 100%;
+		background-color: #19171d;
+	}
+
+		#ni_footer_left{
+			float: left;
+			margin-left: 5%;
+			width: 30%;
+			height: 80%;
+			background-color: #19171d;
+		}
+
+			#ni_footer_left img{
+				float: left;
+				padding-top: 45px;
+				width: 20%;
+				object-fit: scale-down;
+			}
+
+			#ni_footer_left h1{
+				float: left;
+				padding-top: 47px;
+				padding-left: 20px;
+				width: 50%;
+
+				font-family: Roobert;
+				font-weight: bold;
+				font-size: 40px;
+
+				color: steelblue;
+
+				line-height: 41px;
+
+			}
+
+		#ni_footer_center{
+			float: left;
+			margin-left: 2.5%;
+			width: 15%;
+			height: 80%;
+			background-color: #19171d;
+		}
+
+		#ni_footer_right{
+			float: left;
+			margin-left: 2.5%;
+			width: 15%;
+			height: 80%;
+			background-color: #19171d;
+		}
+
+		#ni_footer_contacts{
+			float: left;
+			margin-left: 2.5%;
+			width: 22.5%;
+			height: 80%;
+			background-color: #19171d;
+		}
+
+			#ni_footer_container h2{
+				font-size: 14px;
+				font-family: Roobertlight;
+				font-weight: lighter;
+
+				padding-top: 45px;
+
+				color: darkgrey;
+
+			}
+
+			.ni_footer_container_p{
+				font-size: 15px;
+				font-family: Roobertlight;
+				font-weight: lighter;
+
+				padding-top: 20px;
+
+				color: white;
+			}
+
+				#media_row{
+					margin-top: 20px;
+					padding-bottom: 10px;
+
+					width: 98%;
+					height: 15%;
+				}
+
+					#media_row img{
+						height: 70%;
+						object-fit: scale-down;
+						margin-right: 3%;
+					}
+
+					.media_row_p{
+						font-size: 12px;
+						font-family: Roobertlight;
+						font-weight: lighter;
+
+						padding-top: 7px;
+
+						color: white;
+					}
+
+			#rights{
+				float: left;
+				width: 100%;
+				height: 20px;
+				text-align: center;
+
+				font-family: Roobertlight;
+				font-weight: lighter;
+				font-size: 17px;
+
+				padding-bottom: 20px;
+
+				color: white;
+			}
