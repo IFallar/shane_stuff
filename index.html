@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SEEKER</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styleA_n.css">
+
+</head>
+<body>
+
+	<div id="header_bar">
+		<div id="site_name">
+			<h1 id="site_name_h1">SEEKER</h1>
+		</div>
+		<div id="site_nav">
+			<div class="top_nav_buttons" id="forum_search">
+				<img src="pictures/Icons/menu.png">
+			</div>
+			<div id="main_searchbar">
+				<img src="pictures/Icons/search_icon.png">
+				<input id="main_searchbar_actual" type="" name="">
+			</div>
+			<div class="top_nav_buttons" id="message_nav">
+				<img src="pictures/Icons/message.png">
+			</div>
+			<div class="top_nav_buttons" id="notif_nav">
+				<img src="pictures/Icons/bell.png">
+			</div>
+			<div class="top_nav_buttons" id="login_nav">
+				<img src="pictures/Icons/login.png">
+				<p>Log-In</p>
+			</div>
+		</div>
+
+		<div class="pop_up" id="msgs">
+			<h2>CONVERSATIONS</h2>
+			<p>You have no recent conversations</p>
+			<div class="pop_up_btm">
+				<a href="">See All</a>
+				<a href="">Start a new Conversation</a>
+			</div>
+		</div>
+
+		<div class="pop_up" id="notifs">
+			<h2>NOTIFICATIONS</h2>
+			<p>You have no recent notifications</p>
+			<div class="pop_up_btm">
+				<a href="">See All</a>
+				<a href="">Mark All as Read</a>
+			</div>
+		</div>
+
+		<div id="join">
+			<div id="login">
+				<div id="selectorf">
+					<a class="topbutton" id="have">Sign-In</a>
+					<a class="topbutton" id="donthave">Create Account</a>
+				</div>
+				<div id="signin_input" class="inputs1">
+					<input class="logput" type="text" name="" placeholder="E-mail">
+					<input class="logput" type="text" name="" placeholder="Password">
+					<a id="signin" href="">SIGN-IN</a>
+				</div>
+
+				<div id="signup_input" class="inputs1">
+					<input class="regput" type="text" name="" placeholder="First Name">
+					<input class="regput" type="text" name="" placeholder="Last Name">
+					<input class="regput" type="text" name="" placeholder="Profile Name">
+					<input class="regput" type="text" name="" placeholder="E-mail">
+					<input class="regput" type="text" name="" placeholder="Password">
+					<input class="regput" type="text" name="" placeholder="Confirm Password">
+					<a id="signin" href="">SIGN-UP</a>
+				</div>
+				<div id="cb0" class="x">+</div>
+			</div>
+		</div>
+
+		<div class="filters">
+			<div class="filter_header"></div>
+		</div>
+	</div>
+
+	<div id="lower_nav">
+		<div id="lower_nav_container">
+			<a id="current_page" class="lower_nav_buttons" href="index.html" >HOME</a>
+			<a id="" class="lower_nav_buttons" href="thread.html">FORUM</a>
+			<a id="" class="lower_nav_buttons" href="thisday.html">THIS DAY IN HISTORY</a>
+			<a id="" class="lower_nav_buttons" href="categories.html">CATEGORIES</a>
+			<a id="" class="lower_nav_buttons" href="people.html">HISTORY MAKERS</a>
+			<a id="" class="lower_nav_buttons" href="map.html">INTERACTIVE MAP</a>
+		</div>
+	</div>
+
+	<div id="featured_contents">
+		<div id="featured_contents_container">
+			<div id="featured_slider">
+						<figure id="slide_figure">
+							<div class="img_slide">
+								<div class="featured_slider_desc">
+									<h2>THEIR LIVES AND TIMES</h2>
+									<p>Learn all about the great peoples across from Julius Caesar to Napoleon, their exploits and their deeds, and see how these indiviudals made their mark in history...</p>
+									<a class="go_to" href="people.html">Go To HISTORY MAKERS</a>
+								</div>
+								<img src="pictures/paintings/Bonaparte aux Tuileries.jpg">
+							</div>
+
+							<div class="img_slide">
+								<div class="featured_slider_desc">
+									<h2>LONG AGO, TODAY</h2>
+									<p>History is full of significant dates.
+									<br><br> 
+									Major events, births, deaths, anything can happen on a day like this... So what did?</p>
+									<a class="go_to" href="thisday.html">Go To THIS DAY</a>									
+								</div>
+								<img src="pictures/paintings/Bulgarslayer.jpg">
+							</div>
+
+							<div class="img_slide">
+								<div class="featured_slider_desc">
+									<h2>THE PAST DISCUSSED</h2>
+									<p>Explore the forums and talk to fellow historians, expand your knowledge by engaging in discussions and debates about any and all things history.</p>
+									<a class="go_to" href="thread.html">Go To FORUMS</a>									
+								</div>
+								<img src="pictures/paintings/TheSchoolofAthens-closeup.jpg">
+							</div>
+
+							<div class="img_slide">
+								<div class="featured_slider_desc">
+									<h2>EXPLORE THE MAP</h2>
+									<p>What better way to learn than by exploration? Explore the map and see the many places and events that dots it surface.</p>
+									<a class="go_to" href="map.html">Go To INTERACTIVE MAP</a>								
+								</div>
+								<img src="pictures/paintings/Europe Map.png">
+							</div>
+
+							<div class="img_slide">
+								<div class="featured_slider_desc">
+									<h2>THEIR LIVES AND TIMES</h2>
+									<p>Learn all about the great peoples across from Julius Caesar to Napoleon, their exploits and their deeds, and see how these indiviudals made their mark in history...</p>
+									<a class="go_to" href="people.html">Go To HISTORY MAKERS</a>									
+								</div>
+								<img src="pictures/paintings/Bonaparte aux Tuileries.jpg">
+							</div>
+
+						</figure>				
+			</div>
+
+			<div id="slider_control">
+				<figure>
+					<button class="slidebutton" id="slld1"></button>
+					<button class="slidebutton" id="slld2"></button>
+					<button class="slidebutton" id="slld3"></button>
+					<button class="slidebutton" id="slld4"></button>					
+				</figure>
+			</div>	
+
+		</div>
+	</div>
+
+	<div id="featured_articles">
+
+		<div id="featured_articles_head">
+			<h1 id="featured_articles_title">Latest Content</h1>
+		</div>
+
+		<div id="featured_articles_container">
+			
+			<div id="featured_articles_container_box_1" class="featured_articles_container_box">
+				<img class="featured_articles_container_box_img" src="pictures/paintings/Vercingetorix Throws Down his Arms at the Feet of Julius Caesar.jpg">
+				<a href=""><div class="featured_articles_container_box_desc">
+					<h2>The Gallic Wars</h2>
+					<p>The Gallic Wars were waged between 58 BC and 50 BC by the Roman general Julius Caesar against the peoples of Gaul. Gallic, Germanic, and Britonic tribes fought to defend their homelands against an aggressive Roman campaign.</p>
+				</div></a>
+			</div>
+
+			<div class="featured_articles_container_box">
+				<img class="featured_articles_container_box_img" src="pictures/paintings/Friedrich Der Große.jpg">
+				<a href=""><div class="featured_articles_container_box_desc">
+					<h2>Friedrich Der Große</h2>
+					<p>The Life and times of Fredrick the Great; Prussia during the Seven years war and the miracle of House Hohenzollern...</p>
+				</div></a>
+			</div>
+
+			<div class="featured_articles_container_box">
+				<img class="featured_articles_container_box_img" src="pictures/paintings/Agincourt.jpg">
+				<a href=""><div class="featured_articles_container_box_desc">
+					<h2>Agincourt</h2>
+					<p>Battle of Agincourt, (October 25, 1415), a decisive battle in the Hundred Years’ War (1337–1453) that resulted in the victory of the English over the French against impossible odds.</p>
+				</div></a>
+			</div>
+
+			<div class="featured_articles_container_box">
+				<img class="featured_articles_container_box_img" src="pictures/paintings/Four Horsemen of the Apocalypse.jpg">
+				<a href=""><div class="featured_articles_container_box_desc">
+					<h2>The 30 Years War</h2>
+					<p>The Thirty Years' War was a conflict fought largely within the Holy Roman Empire from 1618 to 1648. Considered one of the most destructive wars in European history.</p>
+				</div></a>
+			</div>
+
+			<div id="archive">
+				<img src="pictures/Icons/Archive.png">
+				<a href="">Go to Archive</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="featured_forums">
+
+		<h1 id="featured_forums_title">Forums</h1>
+
+		<div id="featured_forums_container">
+
+			<div class="forum_tabs" id="general_discussion">
+
+				<div class="tab_header">
+
+					<h1 class="forum_categs">GENERAL DISCUSSIONS</h1>
+					<button id="fm_gd" class="forum_minmax"><img id="fm_gd_arr" class="forum_arrow" src="pictures/Icons/arr_left.svg"></button>
+
+				</div>
+
+					<a href=""><div id="first_forum" class="gd_forum_actual">
+						<div class="gd_forum_pic"><img class="gd_forum_pic_actual" src="pictures/Icons/forum.png"></div>
+						<h2>Seeker General Discussion</h2>
+						<p>For anything relating to SEEKER! Please note though that topic specific questions or help requests should be posted in their own forum.</p>
+					</div></a>
+
+					<a href=""><div class="gd_forum_actual">
+						<div class="gd_forum_pic"><img class="gd_forum_pic_actual" src="pictures/Icons/forum.png"></div>
+						<h2>Forum Help / Issues / Rules</h2>
+						<p>For Issues related to the forum or Assistance with permission problems or finding a function.</p>						
+					</div></a>
+
+			</div>
+
+			<div class="forum_tabs" id="topic_discussion">
+
+				<div class="tab_header">
+
+					<h1 class="forum_categs">DISCUSSIONS BY TOPIC</h1>
+					<button id="fm_td" class="forum_minmax"><img id="fm_td_arr" class="forum_arrow" src="pictures/Icons/arr_left.svg"></button>
+
+				</div>
+
+					<div id="first_forum" class="td_forum_actual">
+
+						<img src="pictures/paintings/Hagia Sophia.jpg">
+						<div class="td_forum_actual_desc">
+							<h2>Architectural History</h2>
+							<a href=""><p>Go to Forums</p></a>
+						</div>
+					</div>
+
+					<div class="td_forum_actual">
+						<img src="pictures/paintings/Guernica.jpg">
+						<div class="td_forum_actual_desc">
+							<h2>Arts History</h2>
+							<a href=""><p>Go to Forums</p></a>
+						</div>						
+					</div>
+
+					<div class="td_forum_actual">
+						<img src="pictures/paintings/Culture.jpg">
+						<div class="td_forum_actual_desc">
+							<h2>Cultural History</h2>
+							<a href=""><p>Go to Forums</p></a>
+						</div>						
+					</div>
+
+					<div class="td_forum_actual">
+						<img src="pictures/paintings/Omaha.jpg">
+						<div class="td_forum_actual_desc">
+							<h2>Military History</h2>
+							<a href=""><p>Go to Forums</p></a>
+						</div>						
+					</div>
+
+					<div id="first_forum" class="td_forum_actual">
+						<img src="pictures/paintings/Parliament.jpg">
+						<div class="td_forum_actual_desc">
+							<h2>Political History</h2>
+							<a href=""><p>Go to Forums</p></a>
+						</div>						
+					</div>
+
+					<div class="td_forum_actual">
+						<img src="pictures/paintings/Creation of Adam.jpg">
+						<div class="td_forum_actual_desc">
+							<h2>Religious History</h2>
+							<a href=""><p>Go to Forums</p></a>
+						</div>						
+					</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div id="ni_footer">
+		<div id="ni_footer_container">
+
+			<div id="ni_footer_left">
+				<img src="pictures/Typewriter Coding.Png">
+				<h1>TYPEWRITER CODING</h1>
+			</div>
+
+			<div id="ni_footer_right">
+				<h2>ABOUT</h2>
+				<a href=""><p class="ni_footer_container_p">News</p></a>
+				<a href=""><p class="ni_footer_container_p">About Us</p></a>
+				<a href=""><p class="ni_footer_container_p">Support</p></a>
+			</div>
+
+			<div id="ni_footer_center">
+				<h2>LINKS</h2>
+				<a href=""><p class="ni_footer_container_p">Overview</p></a>
+				<a href=""><p class="ni_footer_container_p">Repository</p></a>
+			</div>
+
+			<div id="ni_footer_contacts">
+				<h2>SOCIAL MEDIA</h2>
+				<div id="media_row">
+					
+					<a href=""><img src="pictures/Social_Icons/Facebook.png"></a>
+					<a href=""><img src="pictures/Social_Icons/Twitter.png"></a>
+					<a href=""><img src="pictures/Social_Icons/Git.png"></a>
+
+					<a href=""><p class="media_row_p">Terms of Use</p></a>
+					<a href=""><p class="media_row_p">Customer Support</p></a>
+					<a href=""><p class="media_row_p">FAQ</p></a>
+
+				</div>
+			</div>
+
+			<div id="rights">
+				©2021 SEEKER All Rights Reserved
+			</div>
+
+
+		</div>
+	</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

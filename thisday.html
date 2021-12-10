@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SEEKER | This Day</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styleC.css">
+
+</head>
+<body>
+
+	<div id="header_bar">
+		<div id="site_name">
+			<h1 id="site_name_h1">SEEKER</h1>
+		</div>
+		<div id="site_nav">
+			<div class="top_nav_buttons" id="forum_search">
+				<img src="pictures/Icons/menu.png">
+			</div>
+			<div id="main_searchbar">
+				<img src="pictures/Icons/search_icon.png">
+				<input id="main_searchbar_actual" type="" name="">
+			</div>
+			<div class="top_nav_buttons" id="message_nav">
+				<img src="pictures/Icons/message.png">
+			</div>
+			<div class="top_nav_buttons" id="notif_nav">
+				<img src="pictures/Icons/bell.png">
+			</div>
+			<div class="top_nav_buttons" id="login_nav">
+				<img src="pictures/Icons/login.png">
+				<p>Log-In</p>
+			</div>
+		</div>
+
+		<div class="pop_up" id="msgs">
+			<h2>CONVERSATIONS</h2>
+			<p>You have no recent conversations</p>
+			<div class="pop_up_btm">
+				<a href="">See All</a>
+				<a href="">Start a new Conversation</a>
+			</div>
+		</div>
+
+		<div class="pop_up" id="notifs">
+			<h2>NOTIFICATIONS</h2>
+			<p>You have no recent notifications</p>
+			<div class="pop_up_btm">
+				<a href="">See All</a>
+				<a href="">Mark All as Read</a>
+			</div>
+		</div>
+
+		<div id="join">
+			<div id="login">
+				<div id="selectorf">
+					<a class="topbutton" id="have">Sign-In</a>
+					<a class="topbutton" id="donthave">Create Account</a>
+				</div>
+				<div id="signin_input" class="inputs1">
+					<input class="logput" type="text" name="" placeholder="E-mail">
+					<input class="logput" type="text" name="" placeholder="Password">
+					<a id="signin" href="">SIGN-IN</a>
+				</div>
+
+				<div id="signup_input" class="inputs1">
+					<input class="regput" type="text" name="" placeholder="First Name">
+					<input class="regput" type="text" name="" placeholder="Last Name">
+					<input class="regput" type="text" name="" placeholder="Profile Name">
+					<input class="regput" type="text" name="" placeholder="E-mail">
+					<input class="regput" type="text" name="" placeholder="Password">
+					<input class="regput" type="text" name="" placeholder="Confirm Password">
+					<a id="signin" href="">SIGN-UP</a>
+				</div>
+				<div id="cb0" class="x">+</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="lower_nav">
+		<div id="lower_nav_container">
+			<a id="" class="lower_nav_buttons" href="index.html" >HOME</a>
+			<a id="" class="lower_nav_buttons" href="thread.html">FORUM</a>
+			<a id="current_page" class="lower_nav_buttons" href="thisday.html">THIS DAY IN HISTORY</a>
+			<a id="" class="lower_nav_buttons" href="categories.html">CATEGORIES</a>
+			<a id="" class="lower_nav_buttons" href="people.html">HISTORY MAKERS</a>
+			<a id="" class="lower_nav_buttons" href="map.html">INTERACTIVE MAP</a>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="td_main">
+			<h1 id="this">THIS DAY IN HISTORY:</h1>
+			<h1 id="date">DECEMBER 5</h1>
+			<button id="date_picker"><img src="pictures/Icons/Down.png"></button>
+
+			<div id="date_holder">
+				<div class="arr"></div>
+				<div class="cent">
+					<h1 id="date_title">Select Date:</h1>
+					<select class="drop" id="month">
+						<option>Month:</option>
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					</select>
+
+					<select class="drop" id="day">
+						<option>Select Day:</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>						
+					</select>
+
+					<button id="go">GO</button>
+
+				</div>
+				<div class="arr"></div>
+			</div>
+		</div>
+
+		<div id="td_under">
+
+			<div class="fbox" id="featuredevent">
+				<h1>Featured Event</h1>
+				<div id="fboxevent">
+					
+					<img id="fboxeventpic" src="pictures/paintings/Bringing Home the Body of Charles XII.jpg">
+					<p id="year">1718</p>
+					<div id="text">
+						<h3 id="ftitle">The Death of Charles XII</h3>
+						<p id="ftdesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+					
+				</div>
+			</div>
+
+			<a href=""><div class="fbox" id="featuredbio">
+				<h1>Featured Biographies</h1>
+				<div id="fboxbio">
+					<div id="bioname">
+						<h3>Frederick II</h3>
+						<p>Former King of Prussia</p>
+					</div>
+					<img id="biopic" src="pictures/people/Fritz.jpg">
+					<div id="biodeets">
+						
+						<p class="bd_date">BORN</p>
+						<p class="date_actual">January 24, 1712</p>
+						<p class="location">Berlin, Germany</p>
+
+						<p class="bd_date">DIED</p>
+						<p class="date_actual">August 17, 1786</p>
+						<p class="location">Sanssouci Palace, Potsdam</p>
+
+					</div>
+				</div></a>
+
+				<div id="fboxbioside">
+					
+					<div id="borntoday">
+						<h2 id="born">Born on:</h2>
+						<h2 id="borntodaydate">DECEMBER 3</h2>
+					</div>
+
+					<div class="borntodaypeople">
+						<p class="born_year">YEAR</p>
+						<a href=""><p class="born_name">NAME</p></a>
+						<p class="born_who">WHO</p>
+					</div>
+
+					<div class="borntodaypeople">
+						<p class="born_year">YEAR</p>
+						<a href=""><p class="born_name">NAME</p></a>
+						<p class="born_who">WHO</p>
+					</div>
+
+					<div class="borntodaypeople">
+						<p class="born_year">YEAR</p>
+						<a href=""><p class="born_name">NAME</p></a>
+						<p class="born_who">WHO</p>
+					</div>
+
+					<div class="borntodaypeople">
+						<p class="born_year">YEAR</p>
+						<a href=""><p class="born_name">NAME</p></a>
+						<p class="born_who">WHO</p>
+					</div>
+
+					<div class="borntodaypeople">
+						<p class="born_year">YEAR</p>
+						<a href=""><p class="born_name">NAME</p></a>
+						<p class="born_who">WHO</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="td_more">
+
+			<h3>MORE ON THIS DAY:</h3>
+			
+			<div class="event_box">
+				<p id="year">1718</p>
+				<img class="eve_box_img" src="pictures/paintings/Conversations with God.jpg">
+				<div class="event_box_text">
+					<h2 id="event_box_title">Conversations with God</h2>
+					<p id="event_box_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. </p>					
+				</div>
+			</div>
+
+			<div class="event_box">
+				<p id="year">1718</p>
+				<img class="eve_box_img" src="pictures/paintings/Conversations with God.jpg">
+				<div class="event_box_text">
+					<h2 id="event_box_title">Conversations with God</h2>
+					<p id="event_box_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. </p>					
+				</div>
+			</div>
+
+			<div class="event_box">
+				<p id="year">1718</p>
+				<img class="eve_box_img" src="pictures/paintings/Conversations with God.jpg">
+				<div class="event_box_text">
+					<h2 id="event_box_title">Conversations with God</h2>
+					<p id="event_box_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. </p>					
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<div id="ni_footer">
+		<div id="ni_footer_container">
+
+			<div id="ni_footer_left">
+				<img src="pictures/Typewriter Coding.Png">
+				<h1>TYPEWRITER CODING</h1>
+			</div>
+
+			<div id="ni_footer_right">
+				<h2>ABOUT</h2>
+				<a href=""><p class="ni_footer_container_p">News</p></a>
+				<a href=""><p class="ni_footer_container_p">About Us</p></a>
+				<a href=""><p class="ni_footer_container_p">Support</p></a>
+			</div>
+
+			<div id="ni_footer_center">
+				<h2>LINKS</h2>
+				<a href=""><p class="ni_footer_container_p">Overview</p></a>
+				<a href=""><p class="ni_footer_container_p">Repository</p></a>
+			</div>
+
+			<div id="ni_footer_contacts">
+				<h2>SOCIAL MEDIA</h2>
+				<div id="media_row">
+					
+					<a href=""><img src="pictures/Social_Icons/Facebook.png"></a>
+					<a href=""><img src="pictures/Social_Icons/Twitter.png"></a>
+					<a href=""><img src="pictures/Social_Icons/Git.png"></a>
+
+					<a href=""><p class="media_row_p">Terms of Use</p></a>
+					<a href=""><p class="media_row_p">Customer Support</p></a>
+					<a href=""><p class="media_row_p">FAQ</p></a>
+
+				</div>
+			</div>
+
+			<div id="rights">
+				©2021 SEEKER All Rights Reserved
+			</div>
+
+
+		</div>
+	</div>
+
+	<script src="js/Carousel_JS.js"></script>
+	<script src="js/mainB.js"></script>
+	<script src="js/mainC.js"></script>
+
+</body>
+</html>

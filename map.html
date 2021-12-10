@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styleG.css">
+
+	<title>SEEKER | Interactive Map</title>
+</head>
+<body>
+
+
+
+	<div id="header_bar">
+		<div id="site_name">
+			<h1 id="site_name_h1">SEEKER</h1>
+		</div>
+		<div id="site_nav">
+			<div class="top_nav_buttons" id="forum_search">
+				<img src="pictures/Icons/menu.png">
+			</div>
+			<div id="main_searchbar">
+				<img src="pictures/Icons/search_icon.png">
+				<input id="main_searchbar_actual" type="" name="">
+			</div>
+			<div class="top_nav_buttons" id="message_nav">
+				<img src="pictures/Icons/message.png">
+			</div>
+			<div class="top_nav_buttons" id="notif_nav">
+				<img src="pictures/Icons/bell.png">
+			</div>
+			<div class="top_nav_buttons" id="login_nav">
+				<img src="pictures/Icons/login.png">
+				<p>Log-In</p>
+			</div>
+		</div>
+
+		<div class="pop_up" id="msgs">
+			<h2>CONVERSATIONS</h2>
+			<p>You have no recent conversations</p>
+			<div class="pop_up_btm">
+				<a href="">See All</a>
+				<a href="">Start a new Conversation</a>
+			</div>
+		</div>
+
+		<div class="pop_up" id="notifs">
+			<h2>NOTIFICATIONS</h2>
+			<p>You have no recent notifications</p>
+			<div class="pop_up_btm">
+				<a href="">See All</a>
+				<a href="">Mark All as Read</a>
+			</div>
+		</div>
+
+		<div id="join">
+			<div id="login">
+				<div id="selectorf">
+					<a class="topbutton" id="have">Sign-In</a>
+					<a class="topbutton" id="donthave">Create Account</a>
+				</div>
+				<div id="signin_input" class="inputs1">
+					<input class="logput" type="text" name="" placeholder="E-mail">
+					<input class="logput" type="text" name="" placeholder="Password">
+					<a id="signin" href="">SIGN-IN</a>
+				</div>
+
+				<div id="signup_input" class="inputs1">
+					<input class="regput" type="text" name="" placeholder="First Name">
+					<input class="regput" type="text" name="" placeholder="Last Name">
+					<input class="regput" type="text" name="" placeholder="Profile Name">
+					<input class="regput" type="text" name="" placeholder="E-mail">
+					<input class="regput" type="text" name="" placeholder="Password">
+					<input class="regput" type="text" name="" placeholder="Confirm Password">
+					<a id="signin" href="">SIGN-UP</a>
+				</div>
+				<div id="cb0" class="x">+</div>
+			</div>
+		</div>
+
+		<div class="filters">
+			<div class="filter_header"></div>
+		</div>
+	</div>
+
+	<div id="lower_nav">
+		<div id="lower_nav_container">
+			<a id="" class="lower_nav_buttons" href="index.html" >HOME</a>
+			<a id="" class="lower_nav_buttons" href="thread.html">FORUM</a>
+			<a id="" class="lower_nav_buttons" href="thisday.html">THIS DAY IN HISTORY</a>
+			<a id="" class="lower_nav_buttons" href="categories.html">CATEGORIES</a>
+			<a id="" class="lower_nav_buttons" href="people.html">HISTORY MAKERS</a>
+			<a id="current_page" class="lower_nav_buttons" href="map.html">INTERACTIVE MAP</a>
+		</div>
+	</div>
+
+	<div id="location_mode">
+		
+		<button id="continent_btn_current" class="continent_btn">EUROPE</button>
+		<button class="continent_btn">ASIA</button>
+		<button class="continent_btn">AFRICA</button>
+		<button class="continent_btn">NORTH AMERICA</button>
+		<button class="continent_btn">SOUTH AMERICA</button>
+
+	</div>
+
+	<div id="map_modes">
+		
+		<button id="area_mode" class="map_mode_btn">AREAS</button>
+		<button id="event_mode" class="map_mode_btn">EVENTS</button>
+		<button id="wonders_mode" class="map_mode_btn">WONDERS</button>
+
+	</div>
+
+	<div id="mapbody">
+		
+		<img id="mainmap" src="pictures/Maps/Europe Map.png">
+		
+		<img class="mapanchor" id="mapsource" src="pictures/Maps/Mapping Source Blank.png" usemap="#mapcoords">
+		<map class="areas" name="mapcoords">
+			<area shape="rect" coords="1302,932,1304,934" alt="Image Map" title="Image Map" href="" />
+
+			<area class="regions" id="weu" alt="" title="Western Europe" shape="poly" coords="333,168,322,162,303,174,292,202,288,222,283,233,297,228,295,238,288,245,287,253,280,250,278,234,270,232,263,225,248,224,239,232,242,240,235,242,214,234,216,248,209,254,213,263,204,272,191,283,195,300,210,304,234,306,248,304,264,286,266,271,276,263,283,259,306,258,306,282,302,292,292,284,274,296,280,303,276,313,258,316,260,324,276,332,267,336,240,352,240,362,268,368,278,359,297,365,315,365,326,372,353,366,345,386,319,393,316,398,304,392,302,384,294,381,288,382,288,407,266,394,240,395,235,408,256,430,266,444,276,474,255,524,260,538,270,543,282,550,302,559,316,560,330,576,338,561,350,555,372,565,384,573,402,567,389,562,392,554,386,529,393,520,405,506,403,500,399,500,394,497,402,481,413,478,426,473,440,439,424,420,432,401,429,357,442,331,436,324,424,324,418,332,409,332,398,348,386,362,367,368,360,366,356,362,356,355,346,354,360,345,368,332,360,318,354,314,348,279,342,270,336,239,330,229,351,199,330,187,343,176,343,170"/>
+
+			<img class="mappart" id="westeu" src="pictures/Parts/Western Europe.png">
+
+			<area class="regions" id="ceu" alt="" title="Central Europe" shape="poly" coords="441,322,458,322,471,319,468,312,474,304,503,314,500,324,528,318,550,326,578,320,608,310,674,318,693,404,668,453,684,474,646,516,594,532,559,516,530,521,516,513,509,499,498,493,480,497,471,506,434,502,426,515,409,510,404,498,397,501,395,494,426,474,442,440,426,420,438,402,434,398,432,377,430,362,436,348,444,331"/>
+
+			<img class="mappart" id="ceneu" src="pictures/Parts/Central Europe.png">
+
+			<area class="regions" id="balk" alt="" title="The B*lkans" shape="poly" coords="684,472,714,479,736,470,744,464,771,493,775,529,793,525,796,539,784,546,784,580,776,580,773,594,766,603,777,618,762,622,752,626,747,639,714,638,709,641,694,628,677,633,668,633,653,646,649,653,642,657,646,670,636,682,621,664,621,628,582,597,575,586,559,583,545,568,554,567,542,554,540,540,533,536,525,550,519,542,520,531,524,524,534,518,548,520,562,514,592,531,618,520,632,520,646,518,664,485"/>
+
+			<img class="mappart" id="balkan" src="pictures/Parts/Balkans.png">
+
+			<area class="regions" id="nrc" alt="" title="Nordic Countries" shape="poly" coords="733,23,562,22,536,60,540,71,531,70,521,83,515,90,503,94,488,97,474,103,455,110,452,128,450,136,445,139,446,150,449,164,447,170,454,178,456,190,448,194,452,207,462,215,474,220,489,212,505,202,514,196,517,214,521,227,526,241,529,252,532,264,530,272,519,274,513,268,507,260,503,254,504,246,506,237,501,233,490,240,477,242,470,256,467,272,464,280,473,283,473,302,483,306,500,312,508,316,525,308,522,298,526,294,531,285,533,282,532,293,555,293,556,281,574,278,584,262,586,242,588,224,601,212,615,204,614,182,606,166,596,156,599,131,603,123,612,106,623,103,636,89,642,82,646,77,644,64,647,49,661,40,680,44,684,54,676,66,666,84,658,92,654,98,644,114,644,126,646,142,643,158,649,168,663,177,673,182,697,176,728,167,733,161,746,144,751,134,753,125,745,112,740,102,735,92,728,85,740,64,731,49,736,42,737,38,744,36"/>
+
+			<img class="mappart" id="nord" src="pictures/Parts/Nordic Countries.png">
+
+			<area class="regions" id="eeu" alt="" title="Eastern Europe" shape="poly" coords="735,23,778,23,778,32,781,43,790,56,807,63,822,63,813,53,803,45,802,35,816,39,836,42,844,38,830,24,1066,24,1076,39,1083,45,1093,48,1102,58,1105,70,1113,78,1114,88,1121,92,1132,90,1145,98,1158,103,1156,108,1148,113,1154,126,1146,133,1152,155,1167,177,1160,192,1167,208,1175,215,1179,240,1174,252,1146,257,1125,267,1114,277,1091,295,1096,315,1109,329,1120,342,1123,364,1131,374,1139,382,1122,389,1105,410,1094,422,1094,434,1080,442,1080,474,1086,482,1100,487,1106,503,1063,508,1044,512,1045,499,1038,496,1032,480,1020,476,1014,482,1005,483,999,486,1000,496,983,498,971,506,957,510,935,516,926,518,915,514,890,518,880,530,866,541,857,524,845,519,860,504,858,500,834,503,822,496,816,494,797,521,794,528,776,528,776,499,748,467,740,463,729,476,719,475,712,479,687,472,668,458,675,447,672,439,693,406,686,374,681,364,689,357,678,315,654,318,637,314,632,310,636,307,644,307,650,301,645,271,650,244,663,240,672,252,684,252,690,222,683,222,679,213,673,212,674,202,700,190,728,192,731,185,740,180,740,171,734,166,734,161,744,148,755,130,750,117,742,107,741,97,731,89,740,64,732,51,738,37,745,35"/>
+
+			<img class="mappart" id="eastu" src="pictures/Parts/Eastern Europe.png">
+
+			<area class="regions" id="asm" alt="" title="Asia Minor" shape="poly" coords="794,632,837,628,846,617,868,599,890,595,900,589,913,599,917,596,925,605,938,604,968,602,998,596,1013,582,1022,586,1013,602,1012,616,1002,626,981,642,987,650,980,658,986,676,971,683,950,699,945,710,937,716,932,724,918,719,913,728,907,737,881,747,870,744,860,734,840,732,840,745,826,752,811,750,807,744,796,741,788,738,776,738,772,736,770,724,768,716,752,709,753,695,762,703,759,680,757,676,744,678,744,665,764,652,776,653,793,650,799,643,786,639,771,642,759,655,748,658,742,651,749,634,754,627,768,622,777,620,793,630"/>
+
+			<img class="mappart" id="asia" src="pictures/Parts/Asia Minor.png">
+
+			<area class="regions" id="cau" alt="" title="The Caucasus" shape="poly" coords="936,518,936,513,965,512,973,507,983,502,1000,498,1002,490,1020,486,1022,478,1032,478,1039,498,1043,512,1108,506,1131,524,1145,532,1163,548,1176,546,1174,552,1167,563,1167,574,1167,583,1162,590,1149,581,1135,585,1126,601,1113,608,1100,609,1091,608,1084,610,1084,600,1076,596,1060,601,1046,604,1032,609,1026,605,1022,602,1019,600,1014,597,1024,590,1024,582,1013,582,1021,566,1010,544,1004,546,988,542,982,544,974,532,954,525"/>
+
+			<img class="mappart" id="cauc" src="pictures/Parts/Caucasus.png">
+
+			<area class="regions" id="mde" alt="" title="Middle East" shape="poly" coords="1280,596,1264,603,1256,604,1245,616,1237,622,1223,626,1214,626,1199,619,1186,621,1173,610,1165,595,1156,587,1146,582,1134,586,1128,598,1114,610,1092,608,1085,610,1084,602,1075,598,1033,609,1015,599,1014,614,978,640,986,651,983,658,988,676,965,682,947,706,947,718,940,726,942,743,949,768,946,775,935,842,922,859,904,861,891,862,897,889,910,908,1281,910"/>
+
+			<img class="mappart" id="mid" src="pictures/Parts/Middle East.png">
+
+			<area class="regions" id="nra" alt="" title="North Africa" shape="poly" coords="24,754,23,909,903,909,896,902,896,892,890,869,880,863,870,858,859,862,846,863,828,879,802,876,788,873,764,870,744,873,739,863,720,865,714,860,702,859,696,852,695,848,664,839,657,844,629,858,630,874,633,887,622,901,612,905,586,890,570,879,550,877,533,853,488,835,462,827,450,814,448,808,442,805,436,810,430,802,434,792,445,786,454,773,446,761,445,750,457,737,455,734,442,739,441,734,436,723,423,723,412,728,394,726,386,719,378,723,371,716,364,718,356,720,346,726,340,716,319,711,310,713,302,710,294,712,266,707,237,718,232,714,216,714,211,724,182,717,178,713,172,713,144,706,142,701,139,691,137,688,128,687,100,718,66,724,42,732,38,744"/>
+
+			<img class="mappart" id="noraf" src="pictures/Parts/North Africa.png">
+
+			<area class="regions" id="seu" alt="" title="Southern Europe - Iberian Peninsula" shape="poly" coords="253,528,220,516,189,502,165,498,158,487,145,487,142,493,130,492,122,497,126,515,116,546,98,576,92,577,86,588,86,600,93,606,81,634,94,640,105,644,118,647,125,666,134,679,144,680,166,676,178,680,192,683,205,688,222,672,233,673,240,662,249,656,260,652,251,632,276,607,282,605,285,598,304,598,330,589,332,577,311,561,306,563,296,558,284,556,282,551,269,546,259,544" />
+
+			<img class="mappart" id="med" src="pictures/Parts/Southern Europe.png">
+
+			<area class="regions" id="seu1" alt="" title="Southern Europe - Italian Peninsula" shape="poly" coords="403,564,396,561,392,561,395,553,396,540,390,530,394,523,400,519,404,510,407,504,419,510,424,517,429,507,437,502,447,506,463,502,470,504,483,500,488,498,500,496,510,501,520,517,522,525,498,532,500,542,498,549,496,560,508,572,518,580,522,598,546,622,558,621,556,633,575,642,592,656,601,668,599,677,590,668,582,666,575,660,566,676,574,684,576,694,568,701,565,708,556,717,543,718,536,733,539,740,535,750,518,749,513,738,502,734,494,725,483,718,486,708,495,711,500,708,508,714,543,712,547,705,547,700,556,697,546,668,540,670,532,663,532,659,529,654,525,654,524,648,519,652,514,635,504,636,478,609,468,600,464,591,457,588,455,562,437,550,424,560"/>
+
+			<img class="mappart" id="med1" src="pictures/Parts/Southern Europe.png">
+
+			<area class="regions" id="seu2" alt="" title="Southern Europe - Greece and the Aegean Islands" shape="poly" coords="744,641,708,642,694,634,678,636,668,636,648,652,646,672,636,684,650,711,650,725,658,733,662,750,672,745,679,759,692,754,701,782,724,790,742,791,758,788,788,765,797,750,794,742,784,737,768,737,770,728,768,716,751,710,747,696,756,692,755,682,742,678,746,662,744,656,740,650"/>		
+
+			<img class="mappart" id="med2" src="pictures/Parts/Southern Europe.png">		
+		</map>
+
+		<div id="event_mode_map">
+			<a class="event_icon" id="event_1"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_side" id="event_1_detail">
+				<div class="event_detail">
+					<h2>The Battle of Trafalgar</h2>
+
+					<h3 class="event_sub">Date: <br> October 21, 1805</h3>
+					<h3 class="event_sub">Location: <br>  Cape Trafalagar</h3>
+
+					<p>In one of the most decisive naval battles in history, a British fleet under Admiral Lord Nelson defeats a combined French and Spanish fleet at the Battle of Trafalgar, fought off the coast of Spain.
+					<br><br>
+					At sea, Lord Nelson and the Royal Navy consistently thwarted Napoleon Bonaparte, who led France to preeminence on the European mainland. Nelson’s last and greatest victory against the French was the Battle of Trafalgar, which began after Nelson caught sight of a Franco-Spanish force of 33 ships. Preparing to engage the enemy force on October 21, Nelson divided his 27 ships into two divisions and signaled a famous message from the flagship Victory: “England expects that every man will do his duty.”
+					<br><br>
+					In five hours of fighting, the British devastated the enemy fleet, destroying 19 enemy ships. No British ships were lost, but 1,500 British seamen were killed or wounded in the heavy fighting. The battle raged at its fiercest around the Victory, and a French sniper shot Nelson in the shoulder and chest. The admiral was taken below and died about 30 minutes before the end of the battle. Nelson’s last words, after being informed that victory was imminent, were “Now I am satisfied. Thank God I have done my duty.”
+					<br><br>
+					Victory at the Battle of Trafalgar ensured that Napoleon would never invade Britain. Nelson, hailed as the savior of his nation, was given a magnificent funeral in St. Paul’s Cathedral in London. A column was erected to his memory in the newly named Trafalgar Square, and numerous streets were renamed in his honor.</p>
+					
+				</div>
+				<img src="pictures/events/trafalgar.png">
+			</div>			
+
+
+			<a class="event_icon" id="event_2"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_side" id="event_2_detail">
+				<div class="event_detail">
+					<h2>The Gunpowder Plot</h2>
+
+					<h3 class="event_sub">Date: <br> November 4-5, 1605</h3>
+					<h3 class="event_sub">Location: <br>  London</h3>
+
+					<p>The Gunpowder Plot was a failed attempt to blow up England’s King James I (1566-1625) and the Parliament on November 5, 1605. The plot was organized by Robert Catesby (c.1572-1605) in an effort to end the persecution of Roman Catholics by the English government. 
+					<br><br>	
+					Catesby and others hoped to replace the country’s Protestant government with Catholic leadership. Around midnight on November 4, 1605, one of the conspirators, Guy Fawkes (1570-1606), was discovered in the cellar of the Parliament building with barrels of gunpowder. Fawkes and other men involved in the plot were tried and executed for treason. Every November 5, the British celebrate Guy Fawkes Day by burning Fawkes in effigy.</p>
+					
+				</div>
+				<img src="pictures/events/gunpowder.jpg">
+			</div>	
+
+			<a class="event_icon" id="event_3"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_side" id="event_3_detail">
+				<div class="event_detail">
+					<h2>The Eruption of Vesuvius</h2>
+
+					<h3 class="event_sub">Date: <br> 79 AD</h3>
+					<h3 class="event_sub">Location: <br>  Mount Vesuvius, Campania</h3>
+
+					<p>On August 24, after centuries of dormancy, Mount Vesuvius erupts in southern Italy, devastating the prosperous Roman cities of Pompeii and Herculaneum and killing thousands. The cities, buried under a thick layer of volcanic material and mud, were never rebuilt and largely forgotten in the course of history. In the 18th century, Pompeii and Herculaneum were rediscovered and excavated, providing an unprecedented archaeological record of the everyday life of an ancient civilization, startlingly preserved in sudden death.
+					<br><br>	
+					The ancient cities of Pompeii and Herculaneum thrived near the base of Mount Vesuvius at the Bay of Naples. In the time of the early Roman Empire, 20,000 people lived in Pompeii, including merchants, manufacturers, and farmers who exploited the rich soil of the region with numerous vineyards and orchards. None suspected that the black fertile earth was the legacy of earlier eruptions of Mount Vesuvius. Herculaneum was a city of 5,000 and a favorite summer destination for rich Romans. Named for the mythic hero Hercules, Herculaneum housed opulent villas and grand Roman baths. Gambling artifacts found in Herculaneum and a brothel unearthed in Pompeii attest to the decadent nature of the cities. There were smaller resort communities in the area as well, such as the quiet little town of Stabiae.
+					<br><br>
+					At noon on August 24, 79 A.D., this pleasure and prosperity came to an end when the peak of Mount Vesuvius exploded, propelling a 10-mile mushroom cloud of ash and pumice into the stratosphere. For the next 12 hours, volcanic ash and a hail of pumice stones up to 3 inches in diameter showered Pompeii, forcing the city’s occupants to flee in terror. Some 2,000 people stayed in Pompeii, holed up in cellars or stone structures, hoping to wait out the eruption.
+					<br><br>
+					A westerly wind protected Herculaneum from the initial stage of the eruption, but then a giant cloud of hot ash and gas surged down the western flank of Vesuvius, engulfing the city and burning or asphyxiating all who remained. This lethal cloud was followed by a flood of volcanic mud and rock, burying the city.
+					<br><br>
+					The people who remained in Pompeii were killed on the morning of August 25 when a cloud of toxic gas poured into the city, suffocating all that remained. A flow of rock and ash followed, collapsing roofs and walls and burying the dead.</p>
+					
+				</div>
+				<img src="pictures/events/vesuvius.jpg">
+			</div>	
+
+			<a class="event_icon" id="event_4"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_side" id="event_4_detail">
+				<div class="event_detail">
+					<h2>The Siege of Vienna</h2>
+
+					<h3 class="event_sub">Date: <br> July 17 – September 12, 1683</h3>
+					<h3 class="event_sub">Location: <br>  Vienna</h3>
+
+					<p>Siege of Vienna, (July 17–September 12, 1683), expedition by the Ottomans against the Habsburg Holy Roman emperor Leopold I that resulted in their defeat by a combined force led by John III Sobieski of Poland. The lifting of the siege marked the beginning of the end of Ottoman domination in eastern Europe.
+					<br><br>	
+					The leader of the Hungarian Calvinists, Imre Thököly, appealed to the Ottoman grand vizier, Kara Mustafa, to attack the Habsburg capital. With the tacit support of the Hungarian army, 150,000 Ottoman troops laid siege to Vienna, succeeded in capturing the outer fortifications, and began to tunnel to the inner walls. The emperor fled the city. 
+					<br><br>
+					Pope Innocent XI tried unsuccessfully to induce Louis XIV of France to aid Leopold against the Ottomans and then appealed to Poland with a large subsidy. Although Sobieski and the emperor had made a pact of alliance earlier that year, Sobieski was reluctant to come until Innocent persuaded Charles of Lorraine to join a combined army with the electors of Saxony and Bavaria as well as 30 German princes. 
+					<br><br>
+					The 80,000 troops of this relieving army formed along the top of the Vienna hills, and, on the morning of September 12, Lorraine’s and Sobieski’s forces attacked the Ottomans. By this point, Ottoman forces had made serious inroads into the city’s defenses and are generally believed to have come closer to taking Vienna than they were in 1529. The battle raged for 15 hours before the Ottoman invaders were driven from their trenches. The red tent of the grand vizier was blown up, but he escaped while thousands of members of his routed army were slaughtered or taken prisoner. Reports stated that it took the victorious troops and the Viennese a week to collect the booty that was left behind in the Ottoman camp.</p>
+					
+				</div>
+				<img src="pictures/events/vienna.jpg">
+			</div>	
+
+			<a class="event_icon" id="event_5"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_down" id="event_5_detail">
+				<div class="event_detail">
+					<h2>The Battle of Zama</h2>
+
+					<h3 class="event_sub">Date: <br> October 19, 202 BC</h3>
+					<h3 class="event_sub">Location: <br>   Carthage, Zama</h3>
+
+					<p>Battle of Zama, (202 BCE), victory of the Romans led by Scipio Africanus the Elder over the Carthaginians commanded by Hannibal. The last and decisive battle of the Second Punic War, it effectively ended both Hannibal’s command of Carthaginian forces and also Carthage’s chances to significantly oppose Rome. 
+					<br><br>	
+					The battle took place at a site identified by the Roman historian Livy as Naraggara (now Sāqiyat Sīdī Yūsuf, Tunisia). The name Zama was given to the site (which modern historians have never precisely identified) by the Roman historian Cornelius Nepos about 150 years after the battle.
+					</p>
+					
+				</div>
+				<img src="pictures/events/zama.jpg">
+			</div>	
+
+			<a class="event_icon" id="event_6"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_side" id="event_6_detail">
+				<div class="event_detail">
+					<h2>Storming of the Bastille</h2>
+
+					<h3 class="event_sub">Date: <br> July 14, 1789</h3>
+					<h3 class="event_sub">Location: <br>  Bastille, Paris</h3>
+
+					<p>By the summer of 1789, France was moving quickly toward revolution. Bernard-René Jordan de Launay, the military governor of the Bastille, feared that his fortress would be a target for the revolutionaries and so requested reinforcements. On July 12, royal authorities transferred 250 barrels of gunpowder to the Bastille, and Launay brought his men into the massive fortress and raised its two drawbridges.
+					<br><br>	
+					At dawn on July 14, a great crowd armed with muskets, swords, and various makeshift weapons began to gather around the Bastille. Launay’s men were able to hold the mob back, but as more and more Parisians were converging on the Bastille, Launay raised a white flag of surrender over the fortress. Launay and his men were taken into custody, the Bastille’s gunpowder and cannons were seized, and the seven prisoners were freed. Upon arriving at the Hotel de Ville, where Launay was to be arrested and tried by a revolutionary council, he was instead pulled away by a mob and murdered.
+					<br><br>
+					The capture of the Bastille symbolized the end of the ancien regime and provided the French revolutionary cause with an irresistible momentum. In 1792, the monarchy was abolished and Louis and his wife Marie-Antoinette were sent to the guillotine for treason in 1793.</p>
+					
+				</div>
+				<img src="pictures/events/french.jpg">
+			</div>	
+
+			<a class="event_icon" id="event_7"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_side" id="event_7_detail">
+				<div class="event_detail">
+					<h2>The Crossing of the Alps</h2>
+
+					<h3 class="event_sub">Date: <br> 218 BC</h3>
+					<h3 class="event_sub">Location: <br> The Alps</h3>
+
+					<p>Some details of Hannibal’s crossing of the Alps have been preserved, chiefly by Polybius, who is said to have traveled the route himself. First to oppose the crossing was a tribelet of the Allobroges, who may have been angered by Hannibal’s intervention on behalf of Brancus. This group attacked the rear of Hannibal’s column in an ambush, possibly along the Isère at the “gateway to the Alps” (near modern Grenoble) and possibly where the river is at its narrowest, surrounded by high ridges of the Chartreuse and Belledonne massifs. Hannibal took countermeasures, but those involved him in heavy losses in men. On the third day he captured a Gallic town and from its stores provided the army with rations for two or three days.
+					<br><br>	
+					After about four more days of passage along river valleys—very possibly the Isère and Arc rivers, although that is debated—through increasing elevations, Hannibal was ambushed by hostile Gauls at a “white-rock” place apparently one day’s march from the summit. Those unnamed Gauls attacked the baggage animals and rolled heavy stones down from the heights, causing both men and animals to panic and lose their footings on the precipitous paths. Harassed by such daytime assaults and mistrusting the loyalty of his Gallic guides, Hannibal bivouacked on a large bare rock to cover the passage by night of his horses and pack animals in the gorge below. Then, before dawn, he led the remainder of his force through the narrow gorge entrance, killing the few Gauls who had guarded it and believed Hannibal to be trapped.
+					<br><br>
+					Mustering his forces at the summit of the Alps, Hannibal remained camped there for several days before his descent into Italy. Polybius makes it clear that the summit itself must have been high enough for snow drifts to persist from the previous winter; along with the other criteria extrapolated from Polybius, that suggests a summit elevation of at least 8,000 feet (2,400 metres). The problem of determining the exact location of the camp is compounded by the fact that the name of the pass was either not known to Polybius and his sources or it was thought not sufficiently important to provide to mostly Roman readers. Livy, writing 150 years later, sheds no additional light on the matter, and modern historians have posited numerous theories about Hannibal’s exact course through the Alps. Proposed routes have included the low passes at Montgenèvre, Little St. Bernard, and Mount Cenis, as well as the high passes at Col du Clapier–Savine Coche and Col de la Traversette.
+					<br><br>
+					Along the end stages of the route, snow was falling on the pass, making the descent even more treacherous. Rockslides made travel on the narrow track hazardous, and the army was held up for most of a day while it was made passable for the pack animals and elephants. Finally, on the 15th day, after a journey of five months from Cartagena, with 25,000 infantry, 6,000 cavalry, and most of his original 37 elephants, Hannibal descended into Italy. He had surmounted the difficulties of climate and terrain, the guerrilla tactics of inaccessible tribes, and the major difficulty of commanding a body of men diverse in race and language under conditions to which they were ill-fitted.</p>
+					
+				</div>
+				<img src="pictures/events/hannibal.jpeg">
+			</div>	
+
+			<a class="event_icon" id="event_8"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_down" id="event_8_detail">
+				<div class="event_detail">
+					<h2>The Birth of Constantinople</h2>
+
+					<h3 class="event_sub">Date: <br> 330 AD</h3>
+					<h3 class="event_sub">Location: <br>  Byzantium</h3>
+
+					<p>Constantine set about expanding the territory of old Byzantium, dividing it into 14 sections and constructing a new outer wall. He lured noblemen through gifts of land, and transferred art and other ornaments from Rome for display in the new capital. Its wide avenues were lined by statues of great rulers like Alexander the Great and Julius Caesar, as well as one of Constantine himself as Apollo.
+					<br><br>		
+					The emperor also sought to populate the city through offering residents free food rations. With a system of aqueducts already in place, he ensured access to water through the widening city by the construction of the Binbirdirek Cistern.
+					<br><br>
+					In 330 A.D., Constantine established the city that would make its mark in the ancient world as Constantinople, but also would become known by other names, including the Queen of Cities, Istinpolin, Stamboul and Istanbul. It would be governed by Roman law, observe Christianity and adopt Greek as its primary language, although it would serve as a melting pot of races and cultures due to its unique geographic location straddling Europe and Asia.</p>
+					
+				</div>
+				<img src="pictures/events/constantinople.jpg">
+			</div>	
+
+			<a class="event_icon" id="event_9"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_side" id="event_9_detail">
+				<div class="event_detail">
+					<h2>Founding of Spain</h2>
+
+					<h3 class="event_sub">Date: <br> 1478 </h3>
+					<h3 class="event_sub">Location: <br>  Spain</h3>
+
+					<p>Ferdinand of Aragon marries Isabella of Castile in Valladolid, thus beginning a cooperative reign that would unite all the dominions of Spain and elevate the nation to a dominant world power. Ferdinand and Isabella incorporated a number of independent Spanish dominions into their kingdom and in 1478 introduced the Spanish Inquisition, a powerful and brutal force of homogenization in Spanish society. In 1492, the reconquest of Granada from the Moors was completed, and the crown ordered all Spanish Jews to convert to Christianity or face expulsion from Spain. Four years later, Spanish Muslims were handed a similar order.
+					<br><br>	
+					In 1492, Christopher Columbus, an Italian explorer sponsored by Isabella and Ferdinand, stumbled upon the Americas for Europe and claimed the territory for Spain. Ferdinand and Isabella’s subsequent decision to encourage vigorous colonial activity in the Americas led to a period of great prosperity and imperial supremacy for Spain.</p>
+					
+				</div>
+				<img src="pictures/events/iberian.jpg">
+			</div>	
+
+			<a class="event_icon" id="event_10"><img src="pictures/Icons/event.png"></a>
+			<div class="event_details_down" id="event_10_detail">
+				<div class="event_detail">
+					<h2>The October Revolution</h2>
+
+					<h3 class="event_sub">Date: <br> November 7-8, 1917</h3>
+					<h3 class="event_sub">Location: <br>  Saint Petersburg</h3>
+
+					<p>On November 6 and 7, 1917 (or October 24 and 25 on the Julian calendar, which is why the event is often referred to as the October Revolution), leftist revolutionaries led by Bolshevik Party leader Vladimir Lenin launched a nearly bloodless coup d’état against the Duma’s provisional government.
+					<br><br>	
+					The provisional government had been assembled by a group of leaders from Russia’s bourgeois capitalist class. Lenin instead called for a Soviet government that would be ruled directly by councils of soldiers, peasants and workers.
+					<br><br>	
+					The Bolsheviks and their allies occupied government buildings and other strategic locations in Petrograd, and soon formed a new government with Lenin as its head. Lenin became the dictator of the world’s first communist state.</p>
+					
+				</div>
+				<img src="pictures/events/revolution.jpg">
+			</div>	
+
+		</div>
+
+		<div id="wonders">
+			<a class="wonder_icon" id="alhambra"><img src="pictures/wonders_icons/Alhambra.png"></a>
+			<div class="wonder_details_side" id="alhambra_detail">
+				<div class="wonder_details_text">
+					<h2>ALHAMBRA</h2>
+
+					<h3 class="quote_actual">
+						"Everything here appears calculated to inspire kind and happy 
+						feelings, for everything is delicate and beautiful."
+					</h3>
+
+					<h3 class="quotee">- Washington Irving</h3>
+
+					<p>Found in southern Spain, the Alhambra is a large palace complex of the Nasrid Dynasty, who controlled the region in the mid 14th century. Taking its name from the red hue of its walls, the name Alhambra is translated as the "Red Fortress." Noted for its Moorish Islamic architectural style, the Alhambra features elaborate engravings and numerous examples of the interlacing patters know as "Arabesques" found predominantly in Islamic art.</p>
+				</div>
+				<img src="pictures/Wonders/Alhambra.jpg">
+			</div>
+
+			<a class="wonder_icon" id="bigben"><img src="pictures/wonders_icons/Big Ben.png"></a>
+			<div class="wonder_details_side" id="ben_detail">
+				<div class="wonder_details_text">
+					<h2>BIG BEN</h2>
+
+					<h3 class="quote_actual">
+						"To achieve great things, two things are needed: a plan, and not quite enough time."
+					</h3>
+
+					<h3 class="quotee">– Leonard Bernstein</h3>
+
+					<p>Big Ben is the bell housed within the clock tower at the northern end of the Houses of Parliament in London, England. The clock tower is called Elizabeth Tower, but it is an extremely common misconception that the tower itself is called Big Ben, and it is often informally (though incorrectly) referred to as such. The clock is famous for its accuracy, and the massive bell which weighs more than 13 tons and tolls out the day's hours.</p>
+				</div>
+				<img src="pictures/Wonders/Big Ben I.jpg">
+			</div>			
+
+
+			<a class="wonder_icon" id="casa"><img src="pictures/wonders_icons/Casa de Contratacion.png"></a>
+			<div class="wonder_details_side" id="casa_detail">
+				<div class="wonder_details_text">
+					<h2>CASA DE CONTRATACÍON</h2>
+
+					<h3 class="quote_actual">
+						"All other lands found on the western side of the boundary shall belong to the King and Queen of Castille—and their successors."
+					</h3>
+
+					<h3 class="quotee">– Treaty of Tordesillas</h3>
+
+					<p>When Spain joined the late 15th Century’s exploration race, Queen Isabella I of Castile and Ferdinand II of Aragón realized they needed a firmer grasp on colonial trade and expansion. Through their Casa de Contratación, a “House of Trade” created to regulate trade and procurement, the Spanish crown controlled everything related to trade and sea travel.</p>
+				</div>
+				<img src="pictures/Wonders/Casa de Contratación.jpg">
+			</div>				
+
+
+			<a class="wonder_icon" id="collosus"><img src="pictures/wonders_icons/Collosus.png"></a>
+			<div class="wonder_details_down" id="collosus_detail">
+				<div class="wonder_details_text">
+					<h2>THE COLLOSUS</h2>
+
+					<h3 class="quote_actual">
+						"Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves."
+					</h3>
+
+					<h3 class="quotee">– William Shakespeare, Julius Caesar</h3>
+
+					<p>Built from the smelted-down brass and iron of abandoned arms and equipment of a failed invasion, the Colossus of Rhodes was a 98-foot depiction of the Titan Helios erected to celebrate the victory. Construction under the direction of Chares of Lindos began in 292 BC, and by 280 was completed, to the amazement of all.</p>
+				</div>
+				<img src="pictures/Wonders/COLOSSUS.jpg">
+			</div>	
+
+			<a class="wonder_icon" id="colloseum"><img src="pictures/wonders_icons/Colosseum.png"></a>
+			<div class="wonder_details_side" id="colloseum_detail">
+				<div class="wonder_details_text">
+					<h2>THE COLOSSEUM</h2>
+
+					<h3 class="quote_actual">
+						"While the Colosseum stands, Rome shall stand; when the Colosseum falls, Rome shall fall; when Rome falls, the world shall fall."
+					</h3>
+
+					<h3 class="quotee">– Saint Bede</h3>
+
+					<p>The Flavian Amphitheater, better known as the “Coliseum” lies in the center of Rome. Construction began during the reign of Emperor Vespasian, c. 72 AD, funded by the spoils from the Jewish Second Temple after the fall of Jerusalem during the First Jewish-Roman War. Built of concrete and stone, it is the largest amphitheater ever built, and one of the great wonders of ancient architecture and engineering.</p>
+				</div>
+				<img src="pictures/Wonders/Colosseum.jpg">
+			</div>	
+
+			<a class="wonder_icon" id="eiffel"><img src="pictures/wonders_icons/Eiffel Tower.png"></a>
+			<div class="wonder_details_side" id="eiffel_detail">
+				<div class="wonder_details_text">
+					<h2>EIFFEL TOWER</h2>
+
+					<h3 class="quote_actual">
+						"We live only to discover beauty, all else is a form of waiting""
+					</h3>
+
+					<h3 class="quotee">– Kahlil Gibran</h3>
+
+					<p>The Eiffel Tower is one of the world's most famous landmarks. Built for the Universal Exposition of 1889, the tower rises 300 meters (984 feet) above Paris' Champ de Mars, near the Seine River. Structural engineer Alexandre Gustave Eiffel built the tower to demonstrate how steel and iron could be utilized in the construction of extremely tall buildings. The tallest building in the world when it was originally completed, the Eiffel Tower drew crowds of awestruck observers from around the world. </p>
+				</div>
+				<img src="pictures/Wonders/Eiffel Tower.jpg">
+			</div>	
+
+			<a class="wonder_icon" id="library"><img src="pictures/wonders_icons/Great Library.png"></a>
+			<div class="wonder_details_down" id="library_detail">
+				<div class="wonder_details_text">
+					<h2>LIBRARY OF ALEXANDRIA</h2>
+
+					<h3 class="quote_actual">
+						"Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed."
+					</h3>
+
+					<h3 class="quotee">– Sir Francis Bacon</h3>
+
+					<p>The Great Library of Alexandria was one of the two most important libraries of the ancient world. Ptolemy I founded it around 300 BC, and the Library was enhanced and expanded by his successors. The Library attempted to obtain copies of all scrolls of any consequence, and eventually contained over 700,000 volumes.</p>
+				</div>
+				<img src="pictures/Wonders/Great Library.jpg">
+			</div>
+
+			<a class="wonder_icon" id="sophia"><img src="pictures/wonders_icons/Hagia Sophia.png"></a>
+			<div class="wonder_details_down" id="sophia_detail">
+				<div class="wonder_details_text">
+					<h2>HAGIA SOPHIA</h2>
+
+					<h3 class="quote_actual">
+						"For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty."
+					</h3>
+
+					<h3 class="quotee">– Procopius, De Aedificis</h3>
+
+					<p>The Hagia Sophia, or "High Wisdom," was constructed in 530 AD as a Greek Orthodox church. It has been in service, most as a place of worship, for almost 1500 years. It is a remarkable building as it has survived many earthquakes, sometimes needing large repairs. It is a beautiful and ornate structure, built of stone and marble, and topped by a golden dome. </p>
+				</div>
+				<img src="pictures/Wonders/Hagia Sophia.jpg">
+			</div>
+
+
+			<a class="wonder_icon" id="hermitage"><img src="pictures/wonders_icons/Hermitage.png"></a>
+			<div class="wonder_details_down" id="hermitage_detail">
+				<div class="wonder_details_text">
+					<h2>HERMITAGE</h2>
+
+					<h3 class="quote_actual">
+						"Museums are on the front lines of the fight for culture, of good with evil - in any case, of the fight against platitudes and primitiveness.""
+					</h3>
+
+					<h3 class="quotee">– Mikhail Piotrovsky</h3>
+
+					<p>The core of what is today the famed Hermitage in St. Petersburg encompasses the monumental Winter Palace, residence of the Tsars since 1764 AD when Catherine the Great completed the palace on a scale to reflect the might and power of Imperial Russia. The Hermitage is no one of the largest museums in the world, with over three million art and historical items in its collection, including the largest gathering of paintings in the world. </p>
+				</div>
+				<img src="pictures/Wonders/Hermitage 1.jpg">
+			</div>
+
+
+			<a class="wonder_icon" id="michel"><img src="pictures/wonders_icons/Mont St. Michel.png"></a>
+			<div class="wonder_details_side" id="michel_detail">
+				<div class="wonder_details_text">
+					<h2>Mont St. Michel</h2>
+
+					<h3 class="quote_actual">
+						 "Church and State, Soul and Body, God and Man, are all one at Mont Saint Michel, and the business of all is to fight, each in his own way, or to stand guard for each other."
+					</h3>
+
+					<h3 class="quotee">– Henry Adams</h3>
+
+					<p>Perched on a rocky islet between Normandy and Brittany in the midst of sandbanks washed over by ocean tides, Mont St. Michel is a Gothic-style Benedictine abbey dedicated to the archangel Micheal built between the 11th and 16th centuries. Besides St. Aubert's skull, the Mont also was repository for bits of St. Petroc and St. Olaf and other holy relics. </p>
+				</div>
+				<img src="pictures/Wonders/Mont St. Michel 1.jpg">
+			</div>
+
+			<a class="wonder_icon" id="orsz"><img src="pictures/wonders_icons/Országház.png"></a>
+			<div class="wonder_details_side" id="orsz_detail">
+				<div class="wonder_details_text">
+					<h2>ORSZÁGHÁZ</h2>
+
+					<h3 class="quote_actual">
+						"With self-government is freedom, and with freedom is justice and patriotism."
+					</h3>
+
+					<h3 class="quotee">– Lajos Kossuth</h3>
+
+					<p>Orszaghaz translates to “House of the Country” but is better known as the Hungarian Parliament Building. This important building houses the members of Parliament, Hungarian Holy Crown, and the offices of the Prime Minister and staff. But aside from its significance to the government of Hungary, this building itself is an impressive display of Gothic Revival architecture. Overlooking the Danube River, the long wing spans 268 meters, and it is the tallest building in Budapest. </p>
+				</div>
+				<img src="pictures/Wonders/Országház.jpg">
+			</div>	
+
+			<a class="wonder_icon" id="petra"><img src="pictures/wonders_icons/Petra.png"></a>
+			<div class="wonder_details_side" id="petra_detail">
+				<div class="wonder_details_text">
+					<h2>PETRA</h2>
+
+					<h3 class="quote_actual">
+						"Petra is a brilliant display of man's artistry in turning barren rock into majestic wonder."
+					</h3>
+
+					<h3 class="quotee">– Edward Dawson</h3>
+
+					<p>Constructed sometime around 1000 BC, the site of Petra in Jordan is among the most famous examples of rock-cut architecture in the world. Numerous intricately carved structures were cut into the sandstone walls of the desert canyons surrounding the area, as Petra came to serve as the capital city for the once-nomadic Nabataen people.</p>
+				</div>
+				<img src="pictures/Wonders/Petra 1.jpg">
+			</div>	
+
+
+			<a class="wonder_icon" id="basil"><img src="pictures/wonders_icons/St. Basil's Cathedral.png"></a>
+			<div class="wonder_details_side" id="basil_detail">
+				<div class="wonder_details_text">
+					<h2>St. Basil's Cathedral</h2>
+
+					<h3 class="quote_actual">
+						"One had a twisted design, red, on a green ground; another, all prickly angles, yellow and black; a third was ornamented with scales of blue and crimson; a [fourth] was in quarters like a melon."
+					</h3>
+
+					<h3 class="quotee">– Katharine Blanche Guthrie</h3>
+
+					<p>The large, dramatically colored cathedral near Moscow’s Moskva River officially bore the name “Cathedral of the Intercession of the Virgin by the Moat,” but most people referred to it as “St. Basil’s.” The cathedral is reminiscent of a Russian nesting doll, consisting of eight separate clustered churches rather than a single one. Though St. Basil’s was originally a drab white, it received a fresh coat of bold, patterned paint in 1860 that has defined it since.</p>
+				</div>
+				<img src="pictures/Wonders/St. Basil's Cathedral.jpg">
+			</div>					
+
+
+			<a class="wonder_icon" id="belem"><img src="pictures/wonders_icons/Torre de Belém.png"></a>
+			<div class="wonder_details_side" id="belem_detail">
+				<div class="wonder_details_text">
+					<h2>TORRE DE BELÉM</h2>
+
+					<h3 class="quote_actual">
+						"Situated where the river mouth is at its narrowest, it is natural that it was chosen as the site of one of the forts built to defend the capital."
+					</h3>
+
+					<h3 class="quotee">– Unknown</h3>
+
+					<p>The Torre de Belém is one of Portugal’s most recognizable structures and serves a monument to the Age of Discovery. The tower stands defensively in Lisbon’s harbor and acted as the starting point for many explorers setting off into the Atlantic. King Manuel I commissioned Francisco de Arruda in the 16th century to design and build the structure. The tower is made from limestone and is designed in the ornate Manueline style.</p>
+				</div>
+				<img src="pictures/Wonders/Belem-Tower.jpg">
+			</div>		
+
+
+			<a class="wonder_icon" id="arsenal"><img src="pictures/wonders_icons/Venetian Arsenal.png"></a>	
+			<div class="wonder_details_side" id="arsenal_detail">
+				<div class="wonder_details_text">
+					<h2>VENETIAN ARSENAL</h2>
+
+					<h3 class="quote_actual">
+						"The Commonwealth of Venice in their armory have this inscription: 'Happy is that city which in time of peace thinks of war'."
+					</h3>
+
+					<h3 class="quotee">– Robert Burton</h3>
+
+					<p>The Arsenal of Venice, begun about 1104 AD, was eventually a sprawling complex of shipyards, armories, and weapons shops. Built to serve the needs of the Venetian Navy upon which the Republic relied for both its independence and its lucrative sea trade routes, it was termed “the most important example of a large production complex with a centralized structure of the pre-industrial” civilization.</p>
+				</div>
+				<img src="pictures/Wonders/Venetian Arsenal.jpg">
+			</div>	
+		</div>
+	
+	</div>
+
+
+
+	<div id="ni_footer">
+		<div id="ni_footer_container">
+
+			<div id="ni_footer_left">
+				<img src="pictures/Typewriter Coding.Png">
+				<h1>TYPEWRITER CODING</h1>
+			</div>
+
+			<div id="ni_footer_right">
+				<h2>ABOUT</h2>
+				<a href=""><p class="ni_footer_container_p">News</p></a>
+				<a href=""><p class="ni_footer_container_p">About Us</p></a>
+				<a href=""><p class="ni_footer_container_p">Support</p></a>
+			</div>
+
+			<div id="ni_footer_center">
+				<h2>LINKS</h2>
+				<a href=""><p class="ni_footer_container_p">Overview</p></a>
+				<a href=""><p class="ni_footer_container_p">Repository</p></a>
+			</div>
+
+			<div id="ni_footer_contacts">
+				<h2>SOCIAL MEDIA</h2>
+				<div id="media_row">
+					
+					<a href=""><img src="pictures/Social_Icons/Facebook.png"></a>
+					<a href=""><img src="pictures/Social_Icons/Twitter.png"></a>
+					<a href=""><img src="pictures/Social_Icons/Git.png"></a>
+
+					<a href=""><p class="media_row_p">Terms of Use</p></a>
+					<a href=""><p class="media_row_p">Customer Support</p></a>
+					<a href=""><p class="media_row_p">FAQ</p></a>
+
+				</div>
+			</div>
+
+			<div id="rights">
+				©2021 SEEKER All Rights Reserved
+			</div>
+
+
+		</div>
+	</div>
+
+<script src="js/mainG.js"></script>
+</body>
+</html>
