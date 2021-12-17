@@ -23,7 +23,7 @@ document.getElementById('fm_td').addEventListener('click', function() {
 });
 
 document.getElementById('slld1').addEventListener('click', function() {
-	document.querySelector('#slide_figure').style.left = '-400%';
+	document.querySelector('#slide_figure').style.left = '-500%';
 });
 
 document.getElementById('notif_nav').addEventListener('click', function() {
