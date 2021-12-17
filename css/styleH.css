@@ -1,0 +1,137 @@
+			#loggedin_nav img{
+				float: left;
+				padding-top: 3%;
+				padding-left: 1%;
+				height: 80%;
+				width: 40%;
+
+				object-fit: scale-down;
+			}
+
+			#loggedin_nav p{
+				padding-top: 7px;
+				font-family: Helvetica;
+				font-weight: bold;
+				font-size: 15px;
+
+				float: left;
+				color: white;
+			}
+
+			#loggedin_nav{
+				width: 90px;
+				background-color: steelblue;
+			}
+
+
+#user_details{
+		position: absolute;
+		right: 50px;
+		top: 60px;
+		width: 25%;
+		height: 360px;
+		background-color: #19171d;
+
+		border-radius: 5px;
+
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+		display: block;
+		z-index: 2;
+}
+
+	#pic{
+		width: 96%;
+		height: 70px;
+		border-bottom: solid 1px steelblue;
+		margin-left: 2%;
+	}
+
+		#pic img{
+			padding-top: 10px;
+			height: 50px;
+			width: 50px;
+			object-fit: scale-down;
+			float: left;
+		}
+
+		#pic h3{
+				padding-left: 10px;
+				padding-top: 15px;
+				font-family: Helvetica;
+				font-weight: bold;
+				font-size: 20px;
+				width: 60%;
+
+				float: left;
+				color: white;			
+		}
+
+		#pic p{
+				padding-left: 10px;
+				font-family: Roobertlight;
+				font-size: 13px;
+				width: 60%;
+
+				float: left;
+				color: steelblue;				
+		}
+
+	.second_row{
+		width: 96%;
+		height: 90px;
+		border-bottom: solid 1px steelblue;
+		margin-left: 2%;
+		margin-top: 2%;
+	}
+
+		.profile_op{
+
+			width: 47%;
+			height: 30px;
+			padding-top: 10px;
+			padding-left: 3%;
+
+
+			font-family: Roobertlight;
+			font-weight: lighter;
+			font-size: 14px;
+			
+			float: left;
+
+			color: white;
+		}
+
+		.profile_op:hover{
+			background-color: steelblue;
+			cursor: pointer;
+		}
+
+	.third_row{
+		width: 96%;
+		height: 130px;
+		border-bottom: solid 1px steelblue;
+		margin-left: 2%;
+		margin-top: 2%;
+	}
+
+		.profile_op{
+
+			width: 47%;
+			height: 30px;
+			padding-top: 10px;
+			padding-left: 3%;
+
+
+			font-family: Roobertlight;
+			font-weight: lighter;
+			font-size: 14px;
+			
+			float: left;
+
+			color: white;
+		}
+
+		.profile_op:hover{
+			background-color: steelblue;
+			cursor: pointer;
+		}
