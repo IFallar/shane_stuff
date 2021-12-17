@@ -76,6 +76,8 @@
 				color: steelblue;				
 		}
 
+
+
 	.second_row{
 		width: 96%;
 		height: 90px;
@@ -112,7 +114,11 @@
 		border-bottom: solid 1px steelblue;
 		margin-left: 2%;
 		margin-top: 2%;
-	}
+	}	
+
+		.third_row a{
+			color: white;
+		}
 
 		.profile_op{
 
