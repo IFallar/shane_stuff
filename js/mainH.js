@@ -37,6 +37,19 @@ document.getElementById('notif_nav').addEventListener('click', function() {
 
 });
 
+document.getElementById('loggedin_nav').addEventListener('click', function() {
+	if(user_details.style.display == 'none'){
+		document.querySelector('#user_details').style.display = 'block';
+	}
+	else{
+		document.querySelector('#user_details').style.display = 'none';		
+	}
+	document.querySelector('#notifs').style.display = 'none';	
+	document.querySelector('#msgs').style.display = 'none';
+
+
+});
+
 document.getElementById('message_nav').addEventListener('click', function() {
 	if(msgs.style.display == 'none'){
 		document.querySelector('#msgs').style.display = 'block';
@@ -45,7 +58,6 @@ document.getElementById('message_nav').addEventListener('click', function() {
 		document.querySelector('#msgs').style.display = 'none';		
 	}
 	document.querySelector('#notifs').style.display = 'none';	
-
 
 });
 
